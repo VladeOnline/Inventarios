@@ -1,0 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Incremento 0:
+// No se definen modelos comerciales hasta validar requerimientos con el cliente.
