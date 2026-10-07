@@ -671,6 +671,8 @@ td strong {
 }
 
 .welcome {
+  position: relative;
+  overflow: hidden;
   display: grid;
   min-height: 100vh;
   padding: 24px;
@@ -678,13 +680,56 @@ td strong {
   place-items: center;
 }
 
+.welcome::before {
+  position: absolute;
+  inset: -12%;
+  content: "";
+  background-image: url("/rag-byagro-logo.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(760px, 92vw);
+  opacity: 0.08;
+  filter: blur(7px);
+  transform: scale(1);
+  animation: brand-drift 18s ease-in-out infinite alternate;
+}
+
+.welcome::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    radial-gradient(circle at 22% 24%, rgb(35 114 85 / 12%), transparent 30%),
+    radial-gradient(circle at 82% 78%, rgb(23 76 55 / 10%), transparent 34%);
+  pointer-events: none;
+}
+
+@keyframes brand-drift {
+  from {
+    transform: scale(1) translate3d(-10px, -6px, 0);
+  }
+
+  to {
+    transform: scale(1.05) translate3d(12px, 10px, 0);
+  }
+}
+
 .welcome-card {
+  position: relative;
+  z-index: 1;
   width: min(100%, 440px);
   padding: 38px;
-  background: #fff;
+  background: rgb(255 255 255 / 92%);
   border: 1px solid #d7e3da;
   border-radius: 8px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 20px 60px rgb(22 75 54 / 12%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome::before {
+    animation: none;
+  }
 }
 
 .welcome-logo {

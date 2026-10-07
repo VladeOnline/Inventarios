@@ -11,7 +11,7 @@ Fecha de ultima revision: 2026-10-06
 | Anteproyecto | Revisado como fuente principal de alcance. Define aplicacion web inteligente para gestion comercial e inventario durante 2026. |
 | WBS / EDT | Pendiente de adjuntar o confirmar. Se usa organizacion provisional basada en objetivos del anteproyecto hasta recibir el WBS formal. |
 | Entrevista / necesidades del cliente | Pendiente de documento formal adjunto. Se registran como referencia las necesidades indicadas por el usuario en el prompt. |
-| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local, `lucide-react` y logo RAG byAgro. Incluye vistas demostrativas con datos ficticios. |
+| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local, `lucide-react`, logo RAG byAgro y fondo animado sutil. Incluye vistas demostrativas con datos ficticios. |
 | Backend | Base tecnica creada con Node.js y Express. Existe endpoint tecnico `GET /api/health` y Swagger en `/api/docs`. |
 | Base de datos | Prisma configurado para MySQL. No existen modelos comerciales definitivos. |
 | Autenticacion y seguridad | Pendiente. JWT, autorizacion y validaciones de negocio no implementadas todavia. |
@@ -21,7 +21,7 @@ Fecha de ultima revision: 2026-10-06
 | Asistente hibrido | Pendiente. Asistente por IA y alternativa basada en reglas aun no implementados. |
 | Documentacion y pruebas | Existen documentos iniciales, registro de avances, cumplimiento de requerimientos, coleccion Postman, prueba tecnica backend y evidencias base del Incremento 0. |
 
-Ultimo avance registrado: AV-006 - Integracion del logo RAG byAgro en el frontend.
+Ultimo avance registrado: AV-007 - Fondo animado con marca RAG byAgro.
 
 Pendientes principales:
 
@@ -50,6 +50,43 @@ Esta organizacion se usa solo mientras se recibe el WBS formal. No reemplaza el 
 | WBS-P8 | Pruebas, despliegue, documentacion tecnica/manual y capacitacion | Implementacion |
 
 ## Avances
+
+### AV-007 - Fondo animado con marca RAG byAgro
+
+- Fecha: 2026-10-06.
+- Identificador consecutivo del avance: AV-007.
+- Codigo o codigos del WBS trabajados: WBS-P2 provisional. Pendiente de mapear al WBS formal cuando sea proporcionado.
+- Objetivo del anteproyecto relacionado: Diseno de interfaz de usuario de la aplicacion web progresiva y mejora visual de la experiencia inicial.
+- Estado: Terminado.
+- Actividades efectivamente realizadas:
+  - Se agrego el logo RAG byAgro como fondo difuminado en la pantalla de bienvenida.
+  - Se agrego una animacion lenta y sutil para dar dinamismo sin afectar la lectura.
+  - Se mantuvo la tarjeta principal legible mediante transparencia controlada y desenfoque de fondo.
+  - Se agrego soporte para usuarios con reduccion de movimiento mediante `prefers-reduced-motion`.
+- Funcionalidades implementadas y comportamiento resultante:
+  - La pantalla de bienvenida muestra una identidad visual mas marcada y animada.
+  - No se modificaron reglas de negocio, datos reales ni integraciones.
+- Archivos principales creados o modificados:
+  - `frontend/src/index.css`.
+  - `docs/REGISTRO_AVANCES.md`.
+- Pruebas ejecutadas y resultados:
+  - `npm run lint` en `frontend`: sin errores reportados.
+  - `npm run build` en `frontend`: compilacion correcta fuera del sandbox.
+- Pruebas pendientes o que no pudieron ejecutarse:
+  - Queda pendiente validacion visual en navegador por parte del usuario.
+- Evidencias disponibles:
+  - Estilos agregados en `frontend/src/index.css`.
+- Decisiones tecnicas y supuestos:
+  - La animacion se mantiene lenta y de baja opacidad para no distraer del uso de la aplicacion.
+  - El efecto se aplica solo en la pantalla de bienvenida para evitar ruido visual en las pantallas operativas.
+- Problemas encontrados y como se resolvieron:
+  - No se encontraron problemas tecnicos durante el ajuste inicial.
+- Pendientes y siguiente paso:
+  - Verificar lint y build.
+  - Guardar y subir el cambio en la rama `frontend-mvp-canva`.
+- Horas reales informadas por el usuario: Pendiente de informar.
+- Resumen redactado en pasado, listo para bitacora:
+  - Se mejoro la pantalla de bienvenida del MVP visual agregando el logo RAG byAgro como fondo difuminado con una animacion sutil. El ajuste reforzo la identidad visual del sistema sin cambiar reglas de negocio, integraciones ni datos reales.
 
 ### AV-006 - Integracion del logo RAG byAgro en el frontend
 
