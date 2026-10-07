@@ -11,7 +11,7 @@ Fecha de ultima revision: 2026-10-06
 | Anteproyecto | Revisado como fuente principal de alcance. Define aplicacion web inteligente para gestion comercial e inventario durante 2026. |
 | WBS / EDT | Pendiente de adjuntar o confirmar. Se usa organizacion provisional basada en objetivos del anteproyecto hasta recibir el WBS formal. |
 | Entrevista / necesidades del cliente | Pendiente de documento formal adjunto. Se registran como referencia las necesidades indicadas por el usuario en el prompt. |
-| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local y `lucide-react`. Incluye vistas demostrativas con datos ficticios. |
+| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local, `lucide-react` y logo RAG byAgro. Incluye vistas demostrativas con datos ficticios. |
 | Backend | Base tecnica creada con Node.js y Express. Existe endpoint tecnico `GET /api/health` y Swagger en `/api/docs`. |
 | Base de datos | Prisma configurado para MySQL. No existen modelos comerciales definitivos. |
 | Autenticacion y seguridad | Pendiente. JWT, autorizacion y validaciones de negocio no implementadas todavia. |
@@ -21,7 +21,7 @@ Fecha de ultima revision: 2026-10-06
 | Asistente hibrido | Pendiente. Asistente por IA y alternativa basada en reglas aun no implementados. |
 | Documentacion y pruebas | Existen documentos iniciales, registro de avances, cumplimiento de requerimientos, coleccion Postman, prueba tecnica backend y evidencias base del Incremento 0. |
 
-Ultimo avance registrado: AV-005 - Limpieza documental y preparacion de push a GitHub.
+Ultimo avance registrado: AV-006 - Integracion del logo RAG byAgro en el frontend.
 
 Pendientes principales:
 
@@ -50,6 +50,47 @@ Esta organizacion se usa solo mientras se recibe el WBS formal. No reemplaza el 
 | WBS-P8 | Pruebas, despliegue, documentacion tecnica/manual y capacitacion | Implementacion |
 
 ## Avances
+
+### AV-006 - Integracion del logo RAG byAgro en el frontend
+
+- Fecha: 2026-10-06.
+- Identificador consecutivo del avance: AV-006.
+- Codigo o codigos del WBS trabajados: WBS-P2 provisional. Pendiente de mapear al WBS formal cuando sea proporcionado.
+- Objetivo del anteproyecto relacionado: Diseno de interfaz de usuario de la aplicacion web progresiva y adecuacion visual a la identidad de Agricola Rancho Grande / RAG byAgro.
+- Estado: Terminado.
+- Actividades efectivamente realizadas:
+  - Se recibio una imagen del logo RAG byAgro proporcionada por el usuario.
+  - Se agrego el logo como asset publico del frontend.
+  - Se reemplazo el icono generico temporal por el logo real en la pantalla de bienvenida.
+  - Se reemplazo el icono generico temporal por el logo real en la barra lateral del sistema.
+  - Se ajustaron estilos para mostrar el logo correctamente en tamanos pequenos y medianos.
+- Funcionalidades implementadas y comportamiento resultante:
+  - El frontend muestra la identidad visual RAG byAgro en la bienvenida y navegacion principal.
+  - No se modificaron reglas de negocio ni datos reales.
+- Archivos principales creados o modificados:
+  - `frontend/public/rag-byagro-logo.jpeg`.
+  - `frontend/src/App.jsx`.
+  - `frontend/src/index.css`.
+  - `docs/REGISTRO_AVANCES.md`.
+- Pruebas ejecutadas y resultados:
+  - `npm run lint` en `frontend`: sin errores reportados.
+  - `npm run build` en `frontend`: compilacion correcta fuera del sandbox.
+- Pruebas pendientes o que no pudieron ejecutarse:
+  - Queda pendiente validacion visual en navegador por parte del usuario.
+- Evidencias disponibles:
+  - Imagen del logo proporcionada por el usuario.
+  - Asset agregado en `frontend/public/rag-byagro-logo.jpeg`.
+- Decisiones tecnicas y supuestos:
+  - El logo se usa como imagen publica local del frontend para evitar depender de rutas externas.
+  - Se mantiene el texto RAG byAgro como marca visible y el subtitulo de control/gestion de inventario para contextualizar el sistema.
+- Problemas encontrados y como se resolvieron:
+  - No se encontraron problemas tecnicos durante la integracion inicial del logo.
+- Pendientes y siguiente paso:
+  - Verificar lint y build del frontend.
+  - Guardar y subir el cambio en la rama `frontend-mvp-canva`.
+- Horas reales informadas por el usuario: Pendiente de informar.
+- Resumen redactado en pasado, listo para bitacora:
+  - Se integro el logo RAG byAgro proporcionado por el usuario en el frontend del MVP visual. El icono temporal fue reemplazado por la identidad visual real en la pantalla de bienvenida y en la barra lateral, manteniendo el sistema dentro de las tecnologias acordadas y sin modificar reglas de negocio ni datos reales.
 
 ### AV-005 - Limpieza documental y preparacion de push a GitHub
 

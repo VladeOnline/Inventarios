@@ -10,10 +10,11 @@ import {
   PackagePlus,
   Search,
   Send,
-  Sprout,
   Truck,
   Wifi,
 } from 'lucide-react'
+
+const brandLogo = '/rag-byagro-logo.jpeg'
 
 const navItems = [
   { id: 'dashboard', label: 'Panel principal', mobile: 'Inicio', icon: LayoutDashboard },
@@ -107,11 +108,9 @@ function Sidebar({ activeView, onChangeView }) {
   return (
     <aside className="sidebar" aria-label="Navegacion principal">
       <div className="brand-mark">
-        <div className="brand-icon">
-          <Sprout size={20} />
-        </div>
+        <img alt="RAG byAgro" className="brand-logo-small" src={brandLogo} />
         <div>
-          <strong>Agricola Rancho Grande</strong>
+          <strong>RAG byAgro</strong>
           <span>Gestion de inventario</span>
         </div>
       </div>
@@ -726,11 +725,9 @@ function Welcome({ onOpen }) {
     <section className="welcome" aria-label="Acceso de demostracion">
       <div className="welcome-card">
         <div className="welcome-logo">
-          <div className="logo-box">
-            <Sprout size={22} />
-          </div>
+          <img alt="RAG byAgro" className="welcome-brand-image" src={brandLogo} />
           <div>
-            <strong>Agricola Rancho Grande</strong>
+            <strong>RAG byAgro</strong>
             <span>Control de inventario</span>
           </div>
         </div>
