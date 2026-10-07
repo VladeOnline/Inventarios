@@ -42,7 +42,7 @@ No se ha implementado todavia:
 | Area | Cambio realizado | Estado | Evidencia |
 | --- | --- | --- | --- |
 | Control documental | Creacion de `docs/REGISTRO_AVANCES.md` para registrar avances y apoyar bitacoras. | Terminado | `docs/REGISTRO_AVANCES.md` |
-| Analisis inicial | Revision del anteproyecto y separacion entre alcance aprobado y decisiones pendientes. | Terminado | `PROJECT_STATUS.md`, `docs/analysis/TRACEABILITY_MATRIX.md` |
+| Analisis inicial | Revision del anteproyecto y separacion entre alcance aprobado y decisiones pendientes. | Terminado | `docs/REGISTRO_AVANCES.md`, `docs/analysis/TRACEABILITY_MATRIX.md` |
 | Frontend tecnico | Proyecto React/Vite/Tailwind preparado previamente. | Terminado | `frontend/package.json`, `frontend/src/main.jsx` |
 | Frontend MVP visual | Integracion del diseno de Canva como interfaz React. | Terminado | `frontend/src/App.jsx`, `frontend/src/index.css` |
 | Iconografia | Agregado `lucide-react` para iconos internos del frontend. | Terminado | `frontend/package.json`, `frontend/package-lock.json` |

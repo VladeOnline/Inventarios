@@ -21,7 +21,7 @@ Fecha de ultima revision: 2026-10-06
 | Asistente hibrido | Pendiente. Asistente por IA y alternativa basada en reglas aun no implementados. |
 | Documentacion y pruebas | Existen documentos iniciales, registro de avances, cumplimiento de requerimientos, coleccion Postman, prueba tecnica backend y evidencias base del Incremento 0. |
 
-Ultimo avance registrado: AV-004 - Preparacion de rama para avance frontend.
+Ultimo avance registrado: AV-005 - Limpieza documental y preparacion de push a GitHub.
 
 Pendientes principales:
 
@@ -50,6 +50,46 @@ Esta organizacion se usa solo mientras se recibe el WBS formal. No reemplaza el 
 | WBS-P8 | Pruebas, despliegue, documentacion tecnica/manual y capacitacion | Implementacion |
 
 ## Avances
+
+### AV-005 - Limpieza documental y preparacion de push a GitHub
+
+- Fecha: 2026-10-06.
+- Identificador consecutivo del avance: AV-005.
+- Codigo o codigos del WBS trabajados: WBS-P0 provisional. Pendiente de mapear al WBS formal cuando sea proporcionado.
+- Objetivo del anteproyecto relacionado: Control documental, control de versiones y preparacion del repositorio remoto.
+- Estado: Terminado.
+- Actividades efectivamente realizadas:
+  - El usuario confirmo que `DECISIONS.md` y `PROJECT_STATUS.md` fueron eliminados intencionalmente porque ya no aportaban al seguimiento actual.
+  - Se preparo la eliminacion de esos documentos para guardarla en Git.
+  - Se ajusto `docs/CUMPLIMIENTO_REQUERIMIENTOS.md` para no depender de `PROJECT_STATUS.md` como evidencia vigente.
+  - Se preparo la rama `frontend-mvp-canva` para subirse al repositorio remoto de GitHub indicado por el usuario.
+- Funcionalidades implementadas y comportamiento resultante:
+  - No se implementaron funcionalidades nuevas de negocio.
+  - La documentacion queda concentrada en `docs/REGISTRO_AVANCES.md`, `docs/CUMPLIMIENTO_REQUERIMIENTOS.md` y documentos de analisis existentes.
+- Archivos principales creados o modificados:
+  - `docs/REGISTRO_AVANCES.md`.
+  - `docs/CUMPLIMIENTO_REQUERIMIENTOS.md`.
+  - `DECISIONS.md`.
+  - `PROJECT_STATUS.md`.
+- Pruebas ejecutadas y resultados:
+  - Revision de estado de Git antes de preparar el commit.
+- Pruebas pendientes o que no pudieron ejecutarse:
+  - No aplican pruebas tecnicas porque el cambio fue documental.
+- Evidencias disponibles:
+  - Confirmacion del usuario sobre la eliminacion de `DECISIONS.md` y `PROJECT_STATUS.md`.
+  - Repositorio remoto indicado: `https://github.com/VladeOnline/Inventarios.git`.
+- Decisiones tecnicas y supuestos:
+  - La rama de trabajo para frontend se mantiene como `frontend-mvp-canva`.
+  - El remoto se configurara como `origin` si no existe otro remoto configurado.
+- Problemas encontrados y como se resolvieron:
+  - El repositorio local no tenia remoto configurado; se preparara `origin` con la URL proporcionada por el usuario.
+- Pendientes y siguiente paso:
+  - Crear commit de limpieza documental.
+  - Configurar remoto `origin`.
+  - Subir la rama `frontend-mvp-canva` a GitHub.
+- Horas reales informadas por el usuario: Pendiente de informar.
+- Resumen redactado en pasado, listo para bitacora:
+  - Se confirmo la eliminacion intencional de documentos de seguimiento anteriores que ya no se utilizaran. Se actualizo la documentacion vigente para reflejar el estado real del proyecto y se preparo la rama de frontend para subirla al repositorio remoto de GitHub proporcionado por el usuario.
 
 ### AV-004 - Preparacion de rama para avance frontend
 
