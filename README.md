@@ -1,0 +1,2 @@
+# Inventarios
+Para ranchogrande
