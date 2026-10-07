@@ -1,2 +1,2 @@
 # Inventarios
-Para ranchogrande
+Para rancho grande
