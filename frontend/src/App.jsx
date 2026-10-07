@@ -768,7 +768,7 @@ function App() {
   return (
     <div className="app-shell">
       <Sidebar activeView={activeView} onChangeView={setActiveView} />
-      <div className="main-area">
+      <div className={`main-area ${activeView === 'dashboard' ? 'dashboard-active' : ''}`}>
         <Topbar />
         <main>{renderView()}</main>
       </div>

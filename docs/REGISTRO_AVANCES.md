@@ -21,7 +21,7 @@ Fecha de ultima revision: 2026-10-06
 | Asistente hibrido | Pendiente. Asistente por IA y alternativa basada en reglas aun no implementados. |
 | Documentacion y pruebas | Existen documentos iniciales, registro de avances, cumplimiento de requerimientos, coleccion Postman, prueba tecnica backend y evidencias base del Incremento 0. |
 
-Ultimo avance registrado: AV-008 - Marca de agua RAG byAgro en el fondo del producto.
+Ultimo avance registrado: AV-009 - Refuerzo de marca animada en panel principal.
 
 Pendientes principales:
 
@@ -50,6 +50,45 @@ Esta organizacion se usa solo mientras se recibe el WBS formal. No reemplaza el 
 | WBS-P8 | Pruebas, despliegue, documentacion tecnica/manual y capacitacion | Implementacion |
 
 ## Avances
+
+### AV-009 - Refuerzo de marca animada en panel principal
+
+- Fecha: 2026-10-06.
+- Identificador consecutivo del avance: AV-009.
+- Codigo o codigos del WBS trabajados: WBS-P2 provisional. Pendiente de mapear al WBS formal cuando sea proporcionado.
+- Objetivo del anteproyecto relacionado: Diseno de interfaz de usuario de la aplicacion web progresiva y mejora de identidad visual en el panel principal.
+- Estado: Terminado.
+- Actividades efectivamente realizadas:
+  - Se aumento la visibilidad de la marca de agua RAG byAgro especificamente en el panel principal.
+  - Se agrego una animacion adicional de pulso suave para que el fondo tenga mas presencia visual.
+  - Se mantuvo menor intensidad en las demas pantallas internas para no afectar tablas, formularios ni reportes.
+  - Se ajusto la transparencia de los paneles del dashboard para que el fondo pueda percibirse sin perder legibilidad.
+- Funcionalidades implementadas y comportamiento resultante:
+  - El panel principal muestra con mas claridad el logo RAG byAgro en el fondo.
+  - La animacion visual se mantiene decorativa y no altera reglas de negocio, datos ni integraciones.
+- Archivos principales creados o modificados:
+  - `frontend/src/App.jsx`.
+  - `frontend/src/index.css`.
+  - `docs/REGISTRO_AVANCES.md`.
+  - `docs/CUMPLIMIENTO_REQUERIMIENTOS.md`.
+- Pruebas ejecutadas y resultados:
+  - `npm run lint` en `frontend`: sin errores reportados.
+  - `npm run build` en `frontend`: compilacion correcta fuera del sandbox.
+- Pruebas pendientes o que no pudieron ejecutarse:
+  - Queda pendiente validacion visual en navegador por parte del usuario.
+- Evidencias disponibles:
+  - Estilos agregados en `frontend/src/index.css`.
+- Decisiones tecnicas y supuestos:
+  - El efecto mas visible se aplica solo al dashboard mediante una clase condicional del frontend.
+  - Las pantallas operativas conservan una marca de agua mas discreta para priorizar lectura y uso repetido.
+- Problemas encontrados y como se resolvieron:
+  - Se ajusto la animacion de opacidad para que el pulso fuerte no afectara todas las pantallas internas.
+- Pendientes y siguiente paso:
+  - Verificar lint y build.
+  - Guardar y subir el cambio en la rama `frontend-mvp-canva`.
+- Horas reales informadas por el usuario: Pendiente de informar.
+- Resumen redactado en pasado, listo para bitacora:
+  - Se reforzo la presencia visual del logo RAG byAgro en el panel principal del MVP. La marca de agua del dashboard se hizo mas visible y se le agrego una animacion de pulso suave, manteniendo las demas pantallas internas con una presencia de marca mas discreta para conservar la legibilidad.
 
 ### AV-008 - Marca de agua RAG byAgro en el fondo del producto
 
