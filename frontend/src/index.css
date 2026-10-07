@@ -139,11 +139,45 @@ textarea:focus-visible {
 }
 
 .main-area {
+  position: relative;
   flex: 1;
   min-width: 0;
+  overflow: hidden;
+  background: #f3f6f4;
+}
+
+.main-area::before {
+  position: fixed;
+  right: clamp(24px, 8vw, 132px);
+  bottom: clamp(32px, 7vw, 104px);
+  z-index: 0;
+  width: min(620px, 52vw);
+  aspect-ratio: 1;
+  content: "";
+  pointer-events: none;
+  background-image: url("/rag-byagro-logo.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.045;
+  filter: blur(3px);
+  transform: rotate(-3deg) scale(1);
+  animation: dashboard-watermark 22s ease-in-out infinite alternate;
+}
+
+@keyframes dashboard-watermark {
+  from {
+    transform: rotate(-3deg) scale(1) translate3d(-8px, 6px, 0);
+  }
+
+  to {
+    transform: rotate(-1deg) scale(1.04) translate3d(10px, -8px, 0);
+  }
 }
 
 .topbar {
+  position: relative;
+  z-index: 1;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -187,6 +221,8 @@ textarea:focus-visible {
 }
 
 .page {
+  position: relative;
+  z-index: 1;
   max-width: 1450px;
   padding: 30px 32px 44px;
   margin: 0 auto;
@@ -727,6 +763,7 @@ td strong {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .main-area::before,
   .welcome::before {
     animation: none;
   }

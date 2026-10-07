@@ -11,7 +11,7 @@ Fecha de ultima revision: 2026-10-06
 | Anteproyecto | Revisado como fuente principal de alcance. Define aplicacion web inteligente para gestion comercial e inventario durante 2026. |
 | WBS / EDT | Pendiente de adjuntar o confirmar. Se usa organizacion provisional basada en objetivos del anteproyecto hasta recibir el WBS formal. |
 | Entrevista / necesidades del cliente | Pendiente de documento formal adjunto. Se registran como referencia las necesidades indicadas por el usuario en el prompt. |
-| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local, `lucide-react`, logo RAG byAgro y fondo animado sutil. Incluye vistas demostrativas con datos ficticios. |
+| Frontend | MVP visual integrado con React, Vite, Tailwind/CSS local, `lucide-react`, logo RAG byAgro y fondos animados sutiles. Incluye vistas demostrativas con datos ficticios. |
 | Backend | Base tecnica creada con Node.js y Express. Existe endpoint tecnico `GET /api/health` y Swagger en `/api/docs`. |
 | Base de datos | Prisma configurado para MySQL. No existen modelos comerciales definitivos. |
 | Autenticacion y seguridad | Pendiente. JWT, autorizacion y validaciones de negocio no implementadas todavia. |
@@ -21,7 +21,7 @@ Fecha de ultima revision: 2026-10-06
 | Asistente hibrido | Pendiente. Asistente por IA y alternativa basada en reglas aun no implementados. |
 | Documentacion y pruebas | Existen documentos iniciales, registro de avances, cumplimiento de requerimientos, coleccion Postman, prueba tecnica backend y evidencias base del Incremento 0. |
 
-Ultimo avance registrado: AV-007 - Fondo animado con marca RAG byAgro.
+Ultimo avance registrado: AV-008 - Marca de agua RAG byAgro en el fondo del producto.
 
 Pendientes principales:
 
@@ -50,6 +50,44 @@ Esta organizacion se usa solo mientras se recibe el WBS formal. No reemplaza el 
 | WBS-P8 | Pruebas, despliegue, documentacion tecnica/manual y capacitacion | Implementacion |
 
 ## Avances
+
+### AV-008 - Marca de agua RAG byAgro en el fondo del producto
+
+- Fecha: 2026-10-06.
+- Identificador consecutivo del avance: AV-008.
+- Codigo o codigos del WBS trabajados: WBS-P2 provisional. Pendiente de mapear al WBS formal cuando sea proporcionado.
+- Objetivo del anteproyecto relacionado: Diseno de interfaz de usuario de la aplicacion web progresiva y refuerzo de identidad visual en las pantallas operativas.
+- Estado: Terminado.
+- Actividades efectivamente realizadas:
+  - Se agrego el logo RAG byAgro como marca de agua difuminada en el fondo del area principal de la aplicacion.
+  - Se aplico una animacion lenta y de baja opacidad para que el efecto sea visual pero no distraiga.
+  - Se mantuvo el contenido operativo por encima del fondo para proteger la legibilidad de tarjetas, tablas y botones.
+  - Se respeto `prefers-reduced-motion` para desactivar la animacion cuando el usuario tiene reduccion de movimiento.
+- Funcionalidades implementadas y comportamiento resultante:
+  - Las pantallas internas del MVP visual muestran una marca de agua sutil con el logo RAG byAgro en el fondo.
+  - No se modificaron reglas de negocio, datos reales, backend ni base de datos.
+- Archivos principales creados o modificados:
+  - `frontend/src/index.css`.
+  - `docs/REGISTRO_AVANCES.md`.
+  - `docs/CUMPLIMIENTO_REQUERIMIENTOS.md`.
+- Pruebas ejecutadas y resultados:
+  - `npm run lint` en `frontend`: sin errores reportados.
+  - `npm run build` en `frontend`: compilacion correcta fuera del sandbox.
+- Pruebas pendientes o que no pudieron ejecutarse:
+  - Queda pendiente validacion visual en navegador por parte del usuario.
+- Evidencias disponibles:
+  - Estilos agregados en `frontend/src/index.css`.
+- Decisiones tecnicas y supuestos:
+  - La marca de agua se coloca en el area principal, detras de las pantallas operativas, con baja opacidad.
+  - El efecto se mantiene decorativo y no reemplaza ningun dato funcional.
+- Problemas encontrados y como se resolvieron:
+  - No se encontraron problemas tecnicos durante el ajuste inicial.
+- Pendientes y siguiente paso:
+  - Verificar lint y build.
+  - Guardar y subir el cambio en la rama `frontend-mvp-canva`.
+- Horas reales informadas por el usuario: Pendiente de informar.
+- Resumen redactado en pasado, listo para bitacora:
+  - Se reforzo la identidad visual del MVP agregando el logo RAG byAgro como marca de agua difuminada y animada en el fondo de las pantallas operativas. El cambio fue exclusivamente visual y no altero datos, reglas de negocio ni integraciones.
 
 ### AV-007 - Fondo animado con marca RAG byAgro
 

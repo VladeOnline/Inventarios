@@ -25,6 +25,7 @@ Se ha avanzado en:
 - MVP visual basado en el diseno proporcionado desde Canva.
 - Logo RAG byAgro integrado al frontend como identidad visual del MVP.
 - Fondo animado y difuminado con la marca RAG byAgro en la bienvenida.
+- Marca de agua RAG byAgro en el fondo de las pantallas operativas.
 - Registro formal de avances para bitacoras.
 
 No se ha implementado todavia:
@@ -49,6 +50,7 @@ No se ha implementado todavia:
 | Frontend MVP visual | Integracion del diseno de Canva como interfaz React. | Terminado | `frontend/src/App.jsx`, `frontend/src/index.css` |
 | Identidad visual | Integracion del logo RAG byAgro proporcionado por el usuario. | Terminado | `frontend/public/rag-byagro-logo.jpeg`, `frontend/src/App.jsx` |
 | Experiencia visual | Fondo difuminado y animado con la marca RAG byAgro en bienvenida. | Terminado | `frontend/src/index.css` |
+| Experiencia visual operativa | Marca de agua RAG byAgro en el fondo del area principal del producto. | Terminado | `frontend/src/index.css` |
 | Iconografia | Agregado `lucide-react` para iconos internos del frontend. | Terminado | `frontend/package.json`, `frontend/package-lock.json` |
 | Backend tecnico | API Express base con endpoint `GET /api/health`. | Terminado | `backend/src/app.js`, `backend/src/routes/health.routes.js` |
 | Documentacion API | Swagger inicial para endpoint tecnico existente. | Terminado | `backend/src/docs/swagger.js` |
@@ -81,6 +83,7 @@ El MVP visual actual incluye:
 - Pantalla de bienvenida.
 - Logo RAG byAgro en bienvenida y barra lateral.
 - Fondo animado sutil con la marca RAG byAgro en la bienvenida.
+- Marca de agua RAG byAgro en el fondo de las pantallas internas.
 - Panel principal con indicadores ficticios.
 - Inventario con busqueda y filtros.
 - Movimientos con tabla y formulario demostrativo.
